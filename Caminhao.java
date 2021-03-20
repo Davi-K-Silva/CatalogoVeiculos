@@ -7,6 +7,18 @@ public class Caminhao {
     double preco;
     int numeroPortas;
 
+    Caminhao(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas){
+		
+		this.nome = nome;
+		this.tipo = tipo;
+		this.tipoCarteira = tipoCarteira;
+		this.modelo = modelo;
+		this.cor = cor;
+		this.preco = preco;
+		this.numeroPortas = numeroPortas;
+	}
+
+
 	public String getNome() {
 		return this.nome;
 	}
