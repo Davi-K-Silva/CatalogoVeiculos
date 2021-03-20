@@ -7,5 +7,6 @@ public interface Veiculo{
     public String getCor();
     public double getPreco();
     public int getNumeroPortas();
+    public double getPesoMax();
     
 }
