@@ -29,7 +29,7 @@ public class Carro implements Veiculo {
 	}
 
 	public double getPesoMax(){
-		return double pesoMax = peso + (maxPassageiros * 80) + pesoBagagem;
+		return peso + (maxPassageiros * 80) + pesoBagagem;
 	}
 
 	public String getNome() {
