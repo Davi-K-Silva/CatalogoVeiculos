@@ -133,10 +133,12 @@ public class Main {
 
         for(int i=0; i <catalogo.size();i++)
         {   
-            Veiculo veiculo= catalogo.getVeiculo(i);
+            Veiculo veiculo = catalogo.getVeiculo(i);
 
             System.out.println();
         }
+
+        MenuCatalogo();
     }
     
     public static void FiltroPrec()
@@ -165,6 +167,8 @@ public class Main {
 
 
         Catalogo catalogo = new Catalogo();
+        boolean ver = false;
+
 
         for(int i=0; i <catalogo.size();i++)
         {   
@@ -172,13 +176,57 @@ public class Main {
 
             if(preco > veiculo.getPreco())
             {
+                ver = true;
                 System.out.println();
             }
         }
+
+        if(ver)
+        {
+            System.out.println("\n Não há veículos abaixo desse preço!");
+        }
+
+        MenuCatalogo();
     }
 
     public static void FiltroTipo()
     {
+        Scanner teclado = new Scanner(System.in);
 
+        String tipo = "";
+
+        do
+        {
+            System.out.print("\n \n Qual o tipo utilizado de filtro: ");
+                
+                try {
+                    tipo = teclado.nextLine();
+                } catch (Exception e) {
+                    System.out.println("\n O valor utilizado é inválido!");
+                    teclado.next();
+                }
+
+                if(!tipo.equals("Carro") && !tipo.equals("Moto") && !tipo.equals("Caminhão"))
+                {
+                    System.out.println("\n Esse tipo não existe!");
+                }
+
+        }while(!tipo.equals("Carro") && !tipo.equals("Moto") && !tipo.equals("Caminhão"));
+
+
+        Catalogo catalogo = new Catalogo();
+        
+
+        for(int i=0; i <catalogo.size();i++)
+        {   
+            Veiculo veiculo = catalogo.getVeiculo(i);
+
+            if(tipo.equals(veiculo.getNome()))
+            {
+                System.out.println();
+            }
+        }
+
+        MenuCatalogo();
     }
 }
