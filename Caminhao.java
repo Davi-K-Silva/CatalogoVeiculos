@@ -6,8 +6,12 @@ public class Caminhao implements Veiculo {
     String cor;
     double preco;
     int numeroPortas;
+	int maxPassageiro;
+	double peso;
+	double pesoCarga;
+  	double pesoMax;
 
-    Caminhao(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas){
+    Caminhao(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas, int maxPassageiros, double peso, double pesoCarga){
 		
 		this.nome = nome;
 		this.tipo = tipo;
@@ -16,7 +20,14 @@ public class Caminhao implements Veiculo {
 		this.cor = cor;
 		this.preco = preco;
 		this.numeroPortas = numeroPortas;
+		this.maxPassageiro = maxPassageiros;
+		this.peso = peso;
+		this.pesoCarga = pesoCarga;
 	}
+
+	public double getesoMax(){
+        return  pesoMax = peso + (maxPassageiro * 80) + pesoCarga;
+    }
 
 
 	public String getNome() {
@@ -73,6 +84,12 @@ public class Caminhao implements Veiculo {
 
 	public void setNumeroPortas(int numeroPortas) {
 		this.numeroPortas = numeroPortas;
+	}
+
+	@Override
+	public double getPesoMax() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 
