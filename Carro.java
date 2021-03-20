@@ -8,7 +8,16 @@ public class Carro {
     double preco;
     int numeroPortas;
 
-
+	Carro(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas){
+		
+		this.nome = nome;
+		this.tipo = tipo;
+		this.tipoCarteira = tipoCarteira;
+		this.modelo = modelo;
+		this.cor = cor;
+		this.preco = preco;
+		this.numeroPortas = numeroPortas;
+	}
 
 
 	public String getNome() {
