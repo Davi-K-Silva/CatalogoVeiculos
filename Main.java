@@ -70,7 +70,7 @@ public class Main {
         do
         {
            
-            System.out.println("+------------------------------------------------+");
+            System.out.println("\n+------------------------------------------------+");
             System.out.println("|   Como você deseja vizualizar o catálogo:      |");
             System.out.println("|                                                |");
             System.out.println("|   1- Vizualizar todo o catálo                  |");
@@ -163,7 +163,7 @@ public class Main {
                     System.out.println("\n O Valor deve ser maior que 0!");
                 }
 
-        }while(preco<0);
+        }while(preco<=0);
 
 
         Catalogo catalogo = new Catalogo();
