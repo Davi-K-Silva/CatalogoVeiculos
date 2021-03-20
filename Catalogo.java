@@ -15,4 +15,8 @@ public class Catalogo {
     public int size(){
         return cat.size();
     }
+
+    public Veiculo getVeiculo(int index){
+        return cat.get(index);
+    }
 }
