@@ -7,8 +7,14 @@ public class Carro implements Veiculo {
     String cor;
     double preco;
     int numeroPortas;
+	double peso;
+	int maxPassageiros;
+	double pesoBagagem;
 
-	Carro(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas){
+
+	
+
+	Carro(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas, double peso, int maxPassageiros, double pesoBagagem){
 		
 		this.nome = nome;
 		this.tipo = tipo;
@@ -17,8 +23,14 @@ public class Carro implements Veiculo {
 		this.cor = cor;
 		this.preco = preco;
 		this.numeroPortas = numeroPortas;
+		this.peso = peso;
+		this.maxPassageiros = maxPassageiros;
+		this.pesoBagagem = pesoBagagem;
 	}
 
+	public double getPesoMax(){
+		return double pesoMax = peso + (maxPassageiros * 80) + pesoBagagem;
+	}
 
 	public String getNome() {
 		return this.nome;
@@ -76,5 +88,28 @@ public class Carro implements Veiculo {
 		this.numeroPortas = numeroPortas;
 	}
 
+	public double getPeso() {
+		return this.peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public int getMaxPassageiros() {
+		return this.maxPassageiros;
+	}
+
+	public void setMaxPassageiros(int maxPassageiros) {
+		this.maxPassageiros = maxPassageiros;
+	}
+
+	public double getPesoBagagem() {
+		return this.pesoBagagem;
+	}
+
+	public void setPesoBagagem(double pesoBagagem) {
+		this.pesoBagagem = pesoBagagem;
+	}
 
 }
