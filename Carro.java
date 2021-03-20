@@ -1,4 +1,4 @@
-public class Carro {
+public class Carro implements Veiculo {
     
     String nome;
     String tipo;

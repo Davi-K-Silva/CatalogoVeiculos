@@ -1,4 +1,4 @@
-public class Moto {
+public class Moto implements Veiculo {
 
     String nome;
     String tipo;

@@ -1,4 +1,4 @@
-public class Caminhao {
+public class Caminhao implements Veiculo {
     String nome;
     String tipo;
     String tipoCarteira;
