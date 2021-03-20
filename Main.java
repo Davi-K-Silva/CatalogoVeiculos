@@ -129,11 +129,52 @@ public class Main {
 
     public static void ViewCatalogo()
     {
+        Catalogo catalogo = new Catalogo();
 
+        for(int i=0; i <catalogo.size();i++)
+        {   
+            Veiculo veiculo= catalogo.getVeiculo(i);
+
+            System.out.println();
+        }
     }
+    
     public static void FiltroPrec()
     {
+        Scanner teclado = new Scanner(System.in);
 
+        double preco = 0;
+
+        do
+        {
+            System.out.print("\n \n Qual o preço de filtro: ");
+                
+                try {
+                    preco = teclado.nextDouble();
+                } catch (Exception e) {
+                    System.out.println("\n O valor utilizado é inválido!");
+                    teclado.next();
+                }
+
+                if(preco<0)
+                {
+                    System.out.println("\n O Valor deve ser maior que 0!");
+                }
+
+        }while(preco<0);
+
+
+        Catalogo catalogo = new Catalogo();
+
+        for(int i=0; i <catalogo.size();i++)
+        {   
+            Veiculo veiculo = catalogo.getVeiculo(i);
+
+            if(preco > veiculo.getPreco())
+            {
+                System.out.println();
+            }
+        }
     }
 
     public static void FiltroTipo()
