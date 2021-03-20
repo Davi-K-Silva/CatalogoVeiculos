@@ -6,6 +6,6 @@ public interface Veiculo{
     public String getModelo();
     public String getCor();
     public Double getPreco();
-    public int getNumeroportas();
+    public int getNumeroPortas();
     
 }
