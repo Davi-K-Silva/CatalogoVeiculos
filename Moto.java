@@ -7,8 +7,11 @@ public class Moto implements Veiculo {
     String cor;
     double preco;
     int numeroPortas;
+	double peso;
+	int maxPassageiros;
 
-    Moto(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas){
+
+    Moto(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas, double peso, int maxPassageiros){
 		
 		this.nome = nome;
 		this.tipo = tipo;
@@ -75,5 +78,8 @@ public class Moto implements Veiculo {
 		this.numeroPortas = numeroPortas;
 	}
 
+	public double getPesoMax(){
+		return peso + maxPassageiros*80;
+	}
 
 }
