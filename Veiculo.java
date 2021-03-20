@@ -5,7 +5,7 @@ public interface Veiculo{
     public String getTipoCarteira();
     public String getModelo();
     public String getCor();
-    public Double getPreco();
+    public double getPreco();
     public int getNumeroPortas();
     
 }
