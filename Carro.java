@@ -28,7 +28,7 @@ public class Carro implements Veiculo {
 		this.pesoBagagem = pesoBagagem;
 	}
 
-	public double calculaPesoMax(){
+	public double getPesoMax(){
 		return double pesoMax = peso + (maxPassageiros * 80) + pesoBagagem;
 	}
 
