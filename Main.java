@@ -138,17 +138,17 @@ public class Main {
 
             if(veiculo.getTipo().equals("Carro"))
             {
-                System.out.println();// Digitar os valores da sai aqui
+                System.out.println();// Digitar os valores da saida aqui
             }
 
             else if(veiculo.getTipo().equals("Moto"))
             {
-                System.out.println();// Digitar os valores da sai aqui
+                System.out.println();// Digitar os valores da saida aqui
             }
 
             else if(veiculo.getTipo().equals("Caminhão"))
             {
-                System.out.println();// Digitar os valores da sai aqui
+                System.out.println();// Digitar os valores da saida aqui
             }
         }
 
@@ -194,17 +194,17 @@ public class Main {
 
                 if(veiculo.getTipo().equals("Carro"))
                 {
-                    System.out.println();// Digitar os valores da sai aqui
+                    System.out.println();// Digitar os valores da saida aqui
                 }
 
                 else if(veiculo.getTipo().equals("Moto"))
                 {
-                    System.out.println();// Digitar os valores da sai aqui
+                    System.out.println();// Digitar os valores da saida aqui
                 }
 
                 else if(veiculo.getTipo().equals("Caminhão"))
                 {
-                    System.out.println();// Digitar os valores da sai aqui
+                    System.out.println();// Digitar os valores da saida aqui
                 }
             
             }
@@ -291,17 +291,17 @@ public class Main {
 
                 if(veiculo.getTipo().equals("Carro"))
                 {
-                    System.out.println();// Digitar os valores da sai aqui
+                    System.out.println();// Digitar os valores da saida aqui
                 }
 
                 else if(veiculo.getTipo().equals("Moto"))
                 {
-                    System.out.println();// Digitar os valores da sai aqui
+                    System.out.println();// Digitar os valores da saida aqui
                 }
 
                 else if(veiculo.getTipo().equals("Caminhão"))
                 {
-                    System.out.println();// Digitar os valores da sai aqui
+                    System.out.println();// Digitar os valores da saida aqui
                 }
             }
 
