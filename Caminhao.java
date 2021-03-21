@@ -25,9 +25,9 @@ public class Caminhao implements Veiculo {
 		this.pesoCarga = pesoCarga;
 	}
 
-	public double getesoMax(){
-        return  pesoMax = peso + (maxPassageiro * 80) + pesoCarga;
-    }
+	public double getPesoMax() {
+		return peso + (maxPassageiro * 80) + pesoCarga;
+	}
 
 
 	public String getNome() {
@@ -86,11 +86,29 @@ public class Caminhao implements Veiculo {
 		this.numeroPortas = numeroPortas;
 	}
 
-	@Override
-	public double getPesoMax() {
-		// TODO Auto-generated method stub
-		return 0;
+
+	public double getPeso() {
+		return this.peso;
 	}
 
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public int getMaxPassageiros() {
+		return this.maxPassageiro;
+	}
+
+	public void setMaxPassageiros(int maxPassageiros) {
+		this.maxPassageiro = maxPassageiros;
+	}
+
+	public double getPesoCarga() {
+		return this.pesoCarga;
+	}
+
+	public void setPesoCarga(double pesoBagagem) {
+		this.pesoCarga = pesoBagagem;
+	}
 
 }
