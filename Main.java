@@ -2,6 +2,8 @@ import java.util.*;
 
 public class Main {
     
+    private static String tableHead = "%nNome     | Cor      | Modelo   | Tipo     | Preco         | Peso Maximo     |%n" + 
+                                        "---------|----------|----------|----------|---------------|-----------------|%n";
     public static void main(String[] args)
     {
         Catalogo catalogo = new Catalogo();
@@ -131,25 +133,11 @@ public class Main {
     public static void ViewCatalogo(Catalogo catalogo)
     {
         
-
+        System.out.printf(tableHead);
         for(int i=0; i <catalogo.size();i++)
         {   
             Veiculo veiculo = catalogo.getVeiculo(i);
-
-            if(veiculo.getTipo().equals("Carro"))
-            {
-                System.out.println();// Digitar os valores da saida aqui
-            }
-
-            else if(veiculo.getTipo().equals("Moto"))
-            {
-                System.out.println();// Digitar os valores da saida aqui
-            }
-
-            else if(veiculo.getTipo().equals("Caminhão"))
-            {
-                System.out.println();// Digitar os valores da saida aqui
-            }
+            printTableRow(veiculo);
         }
 
         MenuCatalogo(catalogo);
@@ -179,11 +167,9 @@ public class Main {
 
         }while(preco<=0);
 
-
-
         boolean ver = true;
 
-
+        System.out.printf(tableHead);
         for(int i=0; i <catalogo.size();i++)
         {   
             Veiculo veiculo = catalogo.getVeiculo(i);
@@ -191,22 +177,7 @@ public class Main {
             if(preco >= veiculo.getPreco())
             {
                 ver = false;
-
-                if(veiculo.getTipo().equals("Carro"))
-                {
-                    System.out.println();// Digitar os valores da saida aqui
-                }
-
-                else if(veiculo.getTipo().equals("Moto"))
-                {
-                    System.out.println();// Digitar os valores da saida aqui
-                }
-
-                else if(veiculo.getTipo().equals("Caminhão"))
-                {
-                    System.out.println();// Digitar os valores da saida aqui
-                }
-            
+                printTableRow(veiculo);
             }
         }
 
@@ -280,7 +251,7 @@ public class Main {
 
 
         boolean ver = true;
-
+        System.out.printf(tableHead);
         for(int i=0; i <catalogo.size();i++)
         {   
             Veiculo veiculo = catalogo.getVeiculo(i);
@@ -288,21 +259,7 @@ public class Main {
             if(tipo.equals(veiculo.getTipo()))
             {
                 ver = false;
-
-                if(veiculo.getTipo().equals("Carro"))
-                {
-                    System.out.println();// Digitar os valores da saida aqui
-                }
-
-                else if(veiculo.getTipo().equals("Moto"))
-                {
-                    System.out.println();// Digitar os valores da saida aqui
-                }
-
-                else if(veiculo.getTipo().equals("Caminhão"))
-                {
-                    System.out.println();// Digitar os valores da saida aqui
-                }
+                printTableRow(veiculo);
             }
 
         }
@@ -313,6 +270,13 @@ public class Main {
         }
 
         MenuCatalogo(catalogo);
+    }
+
+    public static void printTableRow(Veiculo veiculo)
+    {
+        System.out.printf("%-8s | %-8s | %-8s | %-8s | R$ %-10.2f | %-12.1f KG |%n", veiculo.getNome(), veiculo.getCor(),
+                                                                                           veiculo.getModelo(), veiculo.getTipo(),
+                                                                                           veiculo.getPreco(), veiculo.getPesoMax() );
     }
 
     public static void IntanciarVei(Catalogo catalogo)
