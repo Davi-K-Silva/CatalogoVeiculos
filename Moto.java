@@ -20,6 +20,8 @@ public class Moto implements Veiculo {
 		this.cor = cor;
 		this.preco = preco;
 		this.numeroPortas = numeroPortas;
+		this.peso = peso;
+		this.maxPassageiros = maxPassageiros;
 	}
 
 	public String getNome() {
