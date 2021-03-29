@@ -9,9 +9,9 @@ public class Caminhao implements Veiculo {
 	int maxPassageiro;
 	double peso;
 	double pesoCarga;
-  	double pesoMax;
+	double pesoBau;
 
-    Caminhao(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas, int maxPassageiros, double peso, double pesoCarga){
+    Caminhao(String nome, String tipo, String tipoCarteira, String modelo, String cor, double preco, int numeroPortas, int maxPassageiros, double peso, double pesoCarga, double pesoBau){
 		
 		this.nome = nome;
 		this.tipo = tipo;
@@ -23,10 +23,11 @@ public class Caminhao implements Veiculo {
 		this.maxPassageiro = maxPassageiros;
 		this.peso = peso;
 		this.pesoCarga = pesoCarga;
+		this.pesoBau = pesoBau;
 	}
 
 	public double getPesoMax() {
-		return peso + (maxPassageiro * 80) + pesoCarga;
+		return peso + (maxPassageiro * 80) + pesoCarga + pesoBau;
 	}
 
 

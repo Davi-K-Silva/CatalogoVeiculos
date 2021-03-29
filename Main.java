@@ -321,15 +321,15 @@ public class Main {
         catalogo.addVeiculo(moto7);
         catalogo.addVeiculo(moto8);
 
-        Caminhao caminhao = new Caminhao("Lioa", "Caminhão", "D", "Gio 3", "Azul", 150000, 2, 3, 1600, 20000);
-        Caminhao caminhao1 = new Caminhao("Daoi", "Caminhão", "D", "Carf 3", "Amarelo", 170000, 2, 3, 2200, 24000);
-        Caminhao caminhao2 = new Caminhao("Lou", "Caminhão", "D", "Kom", "Preto", 200000, 2, 3, 1300, 23000);
-        Caminhao caminhao3 = new Caminhao("Carp", "Caminhão", "D", "Fast 4", "Verde", 130000, 2, 3, 2800, 34000);
-        Caminhao caminhao4 = new Caminhao("Karto", "Caminhão", "D", "Joi 67", "Cinza", 180000, 2, 3, 2000, 35000);
-        Caminhao caminhao5 = new Caminhao("Scd23", "Caminhão", "D", "Turbo", "Vermelho", 190000, 2, 3, 2400, 21000);
-        Caminhao caminhao6 = new Caminhao("Pno 10", "Caminhão", "D", "V2", "Azul", 100000, 2, 3, 1600, 23000);
-        Caminhao caminhao7 = new Caminhao("Ac 34", "Caminhão", "D", "V5", "Amarelo", 210000, 2, 3, 2600, 27000);
-        Caminhao caminhao8 = new Caminhao("Voiu 90", "Caminhão", "D", "V8", "Preto", 300000, 2, 3, 2000, 18000);
+        Caminhao caminhao = new Caminhao("Lioa", "Caminhão", "D", "Gio 3", "Azul", 150000, 2, 3, 1600, 20000, 2000);
+        Caminhao caminhao1 = new Caminhao("Daoi", "Caminhão", "D", "Carf 3", "Amarelo", 170000, 2, 3, 2200, 24000, 2000);
+        Caminhao caminhao2 = new Caminhao("Lou", "Caminhão", "D", "Kom", "Preto", 200000, 2, 3, 1300, 23000, 1800);
+        Caminhao caminhao3 = new Caminhao("Carp", "Caminhão", "D", "Fast 4", "Verde", 130000, 2, 3, 2800, 34000, 1800);
+        Caminhao caminhao4 = new Caminhao("Karto", "Caminhão", "D", "Joi 67", "Cinza", 180000, 2, 3, 2000, 35000, 2000);
+        Caminhao caminhao5 = new Caminhao("Scd23", "Caminhão", "D", "Turbo", "Vermelho", 190000, 2, 3, 2400, 21000, 1900);
+        Caminhao caminhao6 = new Caminhao("Pno 10", "Caminhão", "D", "V2", "Azul", 100000, 2, 3, 1600, 23000, 2000);
+        Caminhao caminhao7 = new Caminhao("Ac 34", "Caminhão", "D", "V5", "Amarelo", 210000, 2, 3, 2600, 27000, 1800);
+        Caminhao caminhao8 = new Caminhao("Voiu 90", "Caminhão", "D", "V8", "Preto", 300000, 2, 3, 2000, 18000, 2000);
     
         catalogo.addVeiculo(caminhao);
         catalogo.addVeiculo(caminhao1);
